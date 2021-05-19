@@ -1,0 +1,20 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Surgery Management API",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Toni-Kay Campbell",
+  "license": "ISC"
+}

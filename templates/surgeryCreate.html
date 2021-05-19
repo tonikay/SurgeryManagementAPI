@@ -1,0 +1,47 @@
+<h1>Surgery Schedule</h1>
+<h2>Create a new surgery schedule</h2>
+<a class="backButton" href="/surgery/all">Back</a>
+<hr />
+
+
+<div class="formWrapper">
+  <form id="surgeryCreate" action="/surgery" method="POST">
+    <div class="formError"></div>
+    <div class="formSuccess">Surgery has been scheduled</div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Requested By</div>
+      <select id="requestedBy" name="requestedBy"></select>
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Room</div>
+      <select id="room" name="room" ></select>
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Patient</div>
+      <select id="patient" name="patient" ></select>
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Doctors To Be Assigned</div>
+      <select id="docAssigned" name="docAssigned" multiple></select>
+    </div>
+
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Start Date</div>
+      <input type="date" name="startdate" />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">End Date</div>
+      <input type="date" name="enddate" />
+    </div>
+
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Schedule Surgery</button>
+    </div>
+  </form>
+</div>

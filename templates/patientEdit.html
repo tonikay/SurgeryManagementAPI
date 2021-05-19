@@ -1,0 +1,55 @@
+<h1>Patient Maintenance</h1>
+<a class="backButton" href="/patients/all">Back</a>
+<hr />
+
+<h2>Edit patient details</h2>
+
+<div class="formWrapper">
+  <form id="patientEdit1" action="/patients" method="PUT">
+    <input type="hidden" name="_method" value="PUT"/>
+    <div class="formError"></div>
+    <div class="formSuccess">Your Changes Have Been Saved</div>
+    <input class="hiddenIdInput"  type="hidden" name="uid" />
+
+    <div class="inputWrapper">
+      <div class="inputLabel">First Name</div>
+      <input class="fnameInput" type="text" name="firstName" placeholder="John" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Last Name</div>
+      <input class="lnameInput" type="text" name="lastName" placeholder="Doe" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Date of Birth</div>
+      <input class="dobInput" type="date" name="dob" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Contact Number</div>
+      <input class="contactNumberInput" type="text" name="contactNumber" placeholder="8765551234" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Email</div>
+      <input class="emailInput" type="text" name="email" placeholder="john_doe@email.com" />
+    </div>
+
+    
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save Changes</button>
+    </div>
+  </form>
+</div>
+
+
+<hr />
+<h2>Delete The Patient</h2>
+<div class="formWrapper">
+  <form id="patientEdit2" action="/patients" method="DELETE">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <div class="formError"></div>
+    <div class="warning">Warning: This action cannot be undone. Dont click this button on accident!</div>
+    <input class="hiddenIdInput" type="hidden" name="uid" />
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta red">Delete Patient</button>
+    </div>
+  </form>
+</div>

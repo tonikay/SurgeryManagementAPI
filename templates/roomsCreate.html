@@ -1,0 +1,21 @@
+<h1>Room Maintenance</h1>
+<h2>Enter room details below</h2>
+<a class="backButton" href="/rooms/all">Back</a>
+<hr />
+
+
+<div class="formWrapper">
+  <form id="roomsCreate" action="/rooms" method="POST">
+    <div class="formError"></div>
+    <div class="formSuccess">Room has been created</div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Room Name</div>
+      <input type="text" name="roomName" placeholder="Operating Room 1" />
+    </div>
+
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Add Room</button>
+    </div>
+  </form>
+</div>

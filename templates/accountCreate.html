@@ -1,0 +1,29 @@
+<h1>Account Maintenance</h1>
+<h2>Select the staff member to create an account for</h2>
+
+<hr />
+<div class="formWrapper">
+	<form id="accountCreate" action="/users" method="POST">
+    <div class="formError"></div>
+    <div class="formSuccess">User has been created</div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Username</div>
+      <input type="text" id="userid" name="userid" placeholder="John" />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Staff Member</div>
+      <select id="staffMember" name="staffId"> </select>
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Choose a Password</div>
+      <input type="password" name="password" placeholder="********" />
+    </div>
+    
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Create User</button>
+    </div>
+  </form>
+</div>

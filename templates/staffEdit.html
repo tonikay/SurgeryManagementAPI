@@ -1,0 +1,60 @@
+<h1>Staff Maintenance</h1>
+<a class="backButton" href="/staff/all">Back</a>
+<hr />
+
+<h2>Edit staff details</h2>
+
+<div class="formWrapper">
+  <form id="staffEdit1" action="/staff" method="PUT">
+    <input type="hidden" name="_method" value="PUT"/>
+    <div class="formError"></div>
+    <div class="formSuccess">Your Changes Have Been Saved</div>
+    <input class="hiddenIdInput"  type="hidden" name="uid" />
+
+    <div class="inputWrapper">
+      <div class="inputLabel">StaffType</div>
+      <select class="staffTypeInput" id="staffType" name="staffType" >
+        <option value="Admin">Admin</option>
+        <option value="Doctor">Doctor</option>
+        <option value="Receptionist">Receptionist</option>
+      </select>
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">First Name</div>
+      <input class="fnameInput" type="text" name="firstName" placeholder="John" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Last Name</div>
+      <input class="lnameInput" type="text" name="lastName" placeholder="Doe" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Contact Number</div>
+      <input class="phoneInput" type="text" name="phone" placeholder="8765551234" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Email</div>
+      <input class="emailInput" type="text" name="email" placeholder="john_doe@email.com" />
+    </div>
+
+    
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save Changes</button>
+    </div>
+  </form>
+</div>
+
+
+<hr />
+<h2>Delete The Staff</h2>
+<div class="formWrapper">
+  <form id="staffEdit2" action="/staff" method="DELETE">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <div class="formError"></div>
+    <div class="warning">Warning: This action cannot be undone. Dont click this button on accident!</div>
+    <input class="hiddenIdInput" type="hidden" name="uid" />
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta red">Delete Staff</button>
+    </div>
+  </form>
+</div>
